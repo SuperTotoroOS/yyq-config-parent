@@ -1,30 +1,10 @@
 server:
   port: 11003
 spring:
-  application:
-    name: yyq-data-secondly
-  cloud:
-    config:
-      name: dataSecondly
-      uri: http://localhost:8888
-  boot:
-    admin:
-      url: http://localhost:8090
-  zipkin:
-    base-url: http://localhost:9411
   jpa:
     hibernate:
       ddl-auto: none
     show-sql: true
-management:
-  security:
-    enabled: false
-eureka:
-  instance:
-    non-secure-port: ${server.port:11003}
-  client:
-    service-url:
-      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
 logging:
   level:
     root: info
