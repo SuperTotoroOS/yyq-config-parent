@@ -1,0 +1,13 @@
+server:
+  port: 11003
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+logging:
+  level:
+    root: info
+    com.yyq.data.secondly.repository: debug
+    com.yyq.data.secondly.service: debug
+    com.yyq.data.secondly.web: debug
